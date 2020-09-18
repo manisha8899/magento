@@ -1,0 +1,307 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="smallworld" sortOrder="999" translate="label">
+			<label>PWA</label>
+		</tab>
+		<section id="pwa" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>pwa</label>
+			<tab>smallworld</tab>
+			<resource>Smallworld_Pwa::config_smallworld_pwa</resource>
+			<group id="keys" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>keys</label>
+				<field id="api_key" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>api_key</label>
+					<comment/>
+					<config_path>pwa/keys/api_key</config_path>
+				</field>
+			</group>
+			<group id="nodeuser" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Node User</label>
+				<field id="email" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Node User Email</label>
+					<comment/>
+					<config_path>pwa/nodeuser/email</config_path>
+				</field>
+				<field id="password" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Node User Password</label>
+					<comment/>
+					<config_path>pwa/nodeuser/password</config_path>
+				</field>
+				<field id="url" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Node API URL</label>
+					<comment/>
+					<config_path>pwa/nodeuser/url</config_path>
+				</field>
+				<field id="online_discount_method" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label> online discount Methods</label>
+					<comment/>
+					<config_path>pwa/nodeuser/online_discount_methods</config_path>
+				</field>
+				<field id="online_discount" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>five percent online discount</label>
+					<comment/>
+					<config_path>pwa/nodeuser/online_discount</config_path>
+				</field>
+				<field id="cashback_status" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Cashback Enable</label>
+					<comment/>
+					<config_path>pwa/nodeuser/cashback_status</config_path>
+				</field>
+				<field id="coupons_array" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>coupons Array</label>
+					<comment/>
+					<config_path>pwa/nodeuser/coupons_array</config_path>
+				</field>
+				<field id="max_discount" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Max Discount</label>
+					<comment/>
+					<config_path>pwa/nodeuser/max_discount</config_path>
+				</field>
+				<field id="frontendurl" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Node Frontend URL</label>
+					<comment/>
+					<config_path>pwa/nodeuser/frontendurl</config_path>
+				</field>
+			</group>
+			<group id="easyecom" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Easyecom User</label>
+				<field id="email" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Easyecom Email</label>
+					<comment/>
+					<config_path>pwa/easyecom/email</config_path>
+				</field>
+				<field id="password" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Easyecom Password</label>
+					<comment/>
+					<config_path>pwa/easyecom/password</config_path>
+				</field>
+				<field id="token" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Easyecom Token</label>
+					<comment/>
+					<config_path>pwa/easyecom/token</config_path>
+				</field>
+			</group>
+			<group id="shiprocket" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Shiprocket User</label>
+				<field id="email" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Shiprocket Email</label>
+					<comment/>
+					<config_path>pwa/shiprocket/email</config_path>
+				</field>
+				<field id="password" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Shiprocket Password</label>
+					<comment/>
+					<config_path>pwa/shiprocket/password</config_path>
+				</field>
+				<field id="token" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Shiprocket Token</label>
+					<comment/>
+					<config_path>pwa/shiprocket/token</config_path>
+				</field>
+				<field id="auto_cancel_from_shiprocket" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Enable Aut Cancel on Shiprocket</label>
+					<comment/>
+					<config_path>pwa/shiprocket/auto_cancel_from_shiprocket</config_path>
+				</field>
+			</group>
+
+			<group id="sqs" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>SQS details</label>
+				<field id="order_event_queue_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>order_event_queue_name</label>
+					<comment/>
+					<config_path>pwa/sqs/order_event_queue_name</config_path>
+				</field>
+			</group>
+			<group id="auto_add" showInDefault="1" showInStore="1" showInWebsitqe="1" sortOrder="10" translate="label">
+				<label>Auto Add Details</label>
+				<field id="auto_add_skus" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Add Skus</label>
+					<comment/>
+					<config_path>pwa/auto_add/auto_add_skus</config_path>
+				</field>
+				<field id="no_products" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Number of Products</label>
+					<comment/>
+					<config_path>pwa/auto_add/no_products</config_path>
+				</field>
+				<field id="coupon_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Coupon Name</label>
+					<comment/>
+					<config_path>pwa/auto_add/coupon_name</config_path>
+				</field>
+				<field id="status_coupon" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>coupon status</label>
+					<comment/>
+					<config_path>pwa/auto_add/status_coupon</config_path>
+				</field>
+			</group>
+			<group id="autoadd_config" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Auto Add Second Details</label>
+				<field id="auto_add_sec_skus" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Add Second Skus</label>
+					<comment/>
+					<config_path>pwa/autoadd_config/auto_add_sec_skus</config_path>
+				</field>
+				<field id="no_sec_products" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Number of Second Products</label>
+					<comment/>
+					<config_path>pwa/autoadd_config/no_sec_products</config_path>
+				</field>
+				<field id="coupon_sec_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Second Coupon Name</label>
+					<comment/>
+					<config_path>pwa/autoadd_config/coupon_sec_name</config_path>
+				</field>
+			</group>
+			<group id="auto_thr_add" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Auto Add Third Details</label>
+				<field id="auto_add_thr_skus" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Add Third Skus</label>
+					<comment/>
+					<config_path>pwa/auto_thr_add/auto_add_thr_skus</config_path>
+				</field>
+				<field id="no_thr_products" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Number of Third Products</label>
+					<comment/>
+					<config_path>pwa/auto_thr_add/no_thr_products</config_path>
+				</field>
+				<field id="coupon_thr_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Third Coupon Name</label>
+					<comment/>
+					<config_path>pwa/auto_thr_add/coupon_thr_name</config_path>
+				
+				</field>
+			</group>
+			<group id="auto_for_add" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Auto Add Fourth Details</label>
+				<field id="auto_add_for_skus" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Add Fourth Skus</label>
+					<comment/>
+					<config_path>pwa/auto_for_add/auto_add_for_skus</config_path>
+				</field>
+				<field id="no_for_products" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Number of Fourth Products</label>
+					<comment/>
+					<config_path>pwa/auto_for_add/no_for_products</config_path>
+				</field>
+				<field id="coupon_for_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Fourth Coupon Name</label>
+					<comment/>
+					<config_path>pwa/auto_for_add/coupon_for_name</config_path>
+				
+				</field>
+			</group>
+			<group id="auto_five_add" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Auto Add Fifth Details</label>
+				<field id="auto_add_fve_skus" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Add Fifth Skus</label>
+					<comment/>
+					<config_path>pwa/auto_five_add/auto_add_fve_skus</config_path>
+				</field>
+				<field id="no_fve_products" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Number of Fifth Products</label>
+					<comment/>
+					<config_path>pwa/auto_five_add/no_fve_products</config_path>
+				</field>
+				<field id="coupon_fifth_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Fifth Coupon Name</label>
+					<comment/>
+					<config_path>pwa/auto_five_add/coupon_fifth_name</config_path>
+				</field>
+			</group>
+			<group id="auto_six_config" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Auto Add Sixth Details</label>
+				<field id="auto_add_six_skus" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Add Sixth Skus</label>
+					<comment/>
+					<config_path>pwa/auto_six_config/auto_add_six_skus</config_path>
+				</field>
+				<field id="no_six_products" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Number of Sixth Products</label>
+					<comment/>
+					<config_path>pwa/auto_six_config/no_six_products</config_path>
+				</field>
+				<field id="coupon_six_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Sixth Coupon Name</label>
+					<comment/>
+					<config_path>pwa/auto_six_config/coupon_six_name</config_path>
+				</field>
+			</group>
+			<group id="auto_sev_add" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Auto Add Seventh Details</label>
+				<field id="auto_add_sev_skus" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Add Third Skus</label>
+					<comment/>
+					<config_path>pwa/auto_sev_add/auto_add_sev_skus</config_path>
+				</field>
+				<field id="no_sev_products" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Number of Seventh Products</label>
+					<comment/>
+					<config_path>pwa/auto_sev_add/no_sev_products</config_path>
+				</field>
+				<field id="coupon_sev_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Seventh Coupon Name</label>
+					<comment/>
+					<config_path>pwa/auto_sev_add/coupon_sev_name</config_path>
+				</field>
+			</group>
+			<group id="auto_eig_add" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Auto Add Eight Details</label>
+				<field id="auto_add_eig_skus" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Add Eight Skus</label>
+					<comment/>
+					<config_path>pwa/auto_eig_add/auto_add_eig_skus</config_path>
+				</field>
+				<field id="no_eig_products" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Number of Eight Products</label>
+					<comment/>
+					<config_path>pwa/auto_eig_add/no_eig_products</config_path>
+				</field>
+				<field id="coupon_eig_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Eight Coupon Name</label>
+					<comment/>
+					<config_path>pwa/auto_eig_add/coupon_eig_name</config_path>
+				
+				</field>
+			</group>
+			<group id="auto_nin_add" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Auto Add Ninth Details</label>
+				<field id="auto_add_nin_skus" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Add Ninth Skus</label>
+					<comment/>
+					<config_path>pwa/auto_nin_add/auto_add_nin_skus</config_path>
+				</field>
+				<field id="no_nin_products" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Number of Ninth Products</label>
+					<comment/>
+					<config_path>pwa/auto_nin_add/no_nin_products</config_path>
+				</field>
+				<field id="coupon_nin_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Ninth Coupon Name</label>
+					<comment/>
+					<config_path>pwa/auto_nin_add/coupon_nin_name</config_path>
+				</field>
+			</group>
+			<group id="auto_ten_add" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Auto Add Ten Details</label>
+				<field id="auto_add_ten_skus" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Add Ten Skus</label>
+					<comment/>
+					<config_path>pwa/auto_ten_add/auto_add_ten_skus</config_path>
+				</field>
+				<field id="no_ten_products" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Number of Ten Products</label>
+					<comment/>
+					<config_path>pwa/auto_ten_add/no_ten_products</config_path>
+				</field>
+				<field id="coupon_ten_name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Ten Coupon Name</label>
+					<comment/>
+					<config_path>pwa/auto_ten_add/coupon_ten_name</config_path>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
